@@ -31,7 +31,7 @@ public class AddCourse_Controller extends HttpServlet{
 			session.setAttribute("cou_name",c.getCou_name());
 			session.setAttribute("cou_time",c.getCou_time());
 			resp.sendRedirect("Added.jsp");
-
+ 
 		}
 	}
 }
