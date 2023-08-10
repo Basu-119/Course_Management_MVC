@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+
+<style>
+body {
+background-image: url('img/neww.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+    body {
+
+        font-family: Arial, sans-serif;
+
+        background-color: #f5f5f5;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    form {
+
+        background-color: #fff;
+
+        width: 400px;
+
+        margin: 20px auto;
+
+        padding: 20px;
+
+        border-radius: 5px;
+
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+    }
+
+    label {
+
+        display: block;
+
+        margin-bottom: 5px;
+
+    }
+
+    input[type="text"] {
+
+        width: 100%;
+
+        padding: 10px;
+
+        margin-bottom: 10px;
+
+        border: 1px solid #ccc;
+
+        border-radius: 3px;
+
+    }
+
+    input[type="submit"] {
+
+        background-color: black;
+
+        color: #fff;
+
+        padding: 10px 15px;
+
+        border: none;
+
+        border-radius: 3px;
+
+        cursor: pointer;
+
+    }
+
+    input[type="submit"]:hover {
+
+        background-color: gray;
+
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<form action="AddCourse" method="post">
+
+    <label for="cust_id">COURSE ID</label>
+
+    <input type="text" id="cou_id" name="cou_id" required>
+
+    <label for="pin">COURSE NAME</label>
+
+    <input type="text" id="cou_name" name="cou_name" required>
+
+    <label for="pin">COURSE DURATION</label>
+
+    <input type="text" id="cou_time" name="cou_time" required>
+
+    <input type="submit" value="Add">
+
+</form>
+
+</body>
+
+</html>
