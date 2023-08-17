@@ -1,42 +1,63 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <meta charset="ISO-8859-1">
+
 <title>Insert title here</title>
-<style type="text/css">
+
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
 .container {
+	text-align: center;
+	margin-top: 100px;
+}
 
-        max-width: 800px;
+h1 {
+	color: #333;
+	font-size: 36px;
+}
 
-        margin: 0 auto;
+h6 {
+	color: #666;
+	font-size: 18px;
+}
 
-        padding: 20px;
+.back-link {
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+}
+</style>
 
-        background-color: white;
-
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    }</style>
 </head>
+
 <body>
-<div class="container">
-<%
-session=request.getSession();
-String req_stu_name=(String)session.getAttribute("req_stu_name");
-
-%>
-<h1>
-<%
-out.print(req_stu_name);
-
-%>
-</h1>
-<h6>
-Your Request is Pending .
-Wait for confirmation .
-</h6>
-</div>
+	<div class="container">
+		<%
+		session = request.getSession();
+		String req_stu_name = (String) session.getAttribute("req_stu_name");
+		%>
+		<h1>
+			<%
+			out.print(req_stu_name);
+			%>
+		</h1>
+		<h6>Your Request is Pending . Wait for confirmation .</h6>
+				<a class="back-link" href="Home.html">Go to Main Page</a>
+		
+	</div>
 </body>
+
 </html>

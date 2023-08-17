@@ -91,7 +91,7 @@ padding-left: 100px;
 
 					<div class="container">
 						<div class="jumbotron">
-							<div class="text-center">
+							<div style="margin-left: 160px;" class="text-center">
 								<h2 style="line-height: 0.6; margin-left: 500px">D I G I T
 									&nbsp; O F F I C E</h2>
 								<h4 style="line-height: 0.6; margin-left: 550px">

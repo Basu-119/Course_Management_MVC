@@ -63,7 +63,7 @@ public class MarkStudent_Controller extends HttpServlet {
 		session.setAttribute("remark", sm.getStu_remark());
 
 		if (sm.addMarks() == true) {
-			resp.sendRedirect("/Course_Management_MVC/Student_Mark.jsp");
+			resp.sendRedirect("/Course_Management_MVC/Welcome.jsp");
 		}
 		else {
 			resp.sendRedirect("/Course_Management_MVC/Welcome.html");

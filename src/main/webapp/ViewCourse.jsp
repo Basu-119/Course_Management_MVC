@@ -25,9 +25,15 @@ justify-content: center;
 align-items: center;
 height: 100vh;
 }
-
+body {
+	background-image: url('img2/ha1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 table {
 width: 60%;
+background-color:transparent;
 border-collapse: collapse;
 margin-bottom: 20px;
 border: 1px solid #ccc;
@@ -40,6 +46,7 @@ padding: 12px 15px;
 text-align: left;
 border-bottom: 1px solid #ccc;
 }
+
 
 th {
 background-color: #f2f2f2;
@@ -88,10 +95,10 @@ opacity: 1;
 		int j = metadata.getColumnCount();
 	%>
 	<table class="table-hover table-bordered dark table-dark" >
-		<tr>
+		<tr style="background-color: black; ">
 			<%
 			for (int i = 1; i <= j; i++) {
-				out.print("<th style=\"text-align: left;\">" + metadata.getColumnName(i) + "</th>");
+				out.print("<th style=\"color:white;background-color: #4981f6; \">" + metadata.getColumnName(i) + "</th>");
 			}
 			%>
 		</tr>
@@ -101,7 +108,7 @@ opacity: 1;
 		<tr>
 			<%
 			for (int i = 1; i <= j; i++) {
-				out.print("<td style=\"text-align: left;\">" + res.getString(i) + "</td>");
+				out.print("<td style=\"text-align: left; background-color: ;\">" + res.getString(i) + "</td>");
 			}
 			%>
 		</tr>

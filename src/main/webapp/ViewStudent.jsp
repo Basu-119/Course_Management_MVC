@@ -34,6 +34,12 @@ border: 1px solid #ccc;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 background-color: #fff;
 }
+body {
+	background-image: url('img2/ha1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
 th, td {
 padding: 12px 15px;
@@ -91,7 +97,7 @@ opacity: 1;
 		<tr>
 			<%
 			for (int i = 1; i <= j; i++) {
-				out.print("<th style=\"text-align: left;\">" + metadata.getColumnName(i) + "</th>");
+				out.print("<th style=\"color:white;background-color: #4981f6; \">" + metadata.getColumnName(i) + "</th>");
 			}
 			%>
 		</tr>

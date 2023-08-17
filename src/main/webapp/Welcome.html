@@ -2,24 +2,30 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Welcome Page</title>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
+<link rel="stylesheet" href="tfield.css">
+
 <style type="text/css">
-
-
-.navbar {
-	background-color: gray;
+body {
+	background-image: url('img2/ha1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .collapse {
 	margin-left: 890px;
 }
+.navbar {
+	background-color: gray;
+}
 
 .custom-btn {
-	width: 130px;
+	width: 120px;
 	height: 40px;
 	color: #fff;
 	border-radius: 5px;
@@ -35,139 +41,129 @@
 	outline: none;
 }
 
-/* 1 */
-.btn-1 {
-	background: transparent;
+.navbar-brand {
+	color: white;
 }
 
-.btn-1:hover {
-	background: black;
+.mtop {
+	margin-top: 60px;
 }
 
-.btn-4 {
-	background-color: transparent;
-	text: black;
-}
-
-.txt {
-	color: black;
-}
-
-
-.a{
-color: black;
-}
-
-.container2 {
-	max-width: 400px;
-	padding: 30px;
-	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 10px;
-	border-color: black;
-	color:black;
-	text-decoration:none;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 10%);
-	text-align: center;
-	margin: 20px;
-	box-shadow: 0 0 50px rgba(0, 0, 0, 10%);
-	border-style: groove;
-}
-.container2:hover{
-	max-width: 400px;
-	padding: 30px;
-	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 10px;
-	border: 2px;
-	color:white;
-	background-color:black;
-	border-color: black;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 10%);
-	text-align: center;
-	margin: 20px;
-	box-shadow: 0 0 50px rgba(0, 0, 0, 10%);
-	border-style: groove;
-		text-decoration:none;
+.container {
 	
 }
-
-.bi{
-color: black;
-}
-.bi:hover{
-color: white;
-}
-.b1{
-color: white;}
-.abc {
-	padding: 20px;
-	color: white;
-}
-.abb:hover {
-	color: white;
-}
 </style>
+<link rel="stylesheet" href="assets/css/ud-styles.css" />
+
 </head>
 <body>
 	<div>
 		<nav class="navbar navbar-expand-lg ">
 			<div class="container">
-				<a href="Welcome.html" class="navbar-brand mx-auto mx-lg-0"> <span class="b1">MY</span>
-					<i ></i> <span class="bi">COURSE</span>
+				<a href="Welcome.html" class="navbar-brand mx-auto mx-lg-0"> <span
+					class="b1">MY</span> <i></i> <span class="bi">COURSE</span>
 				</a>
 
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ">
 						<li class="nav-item">
-							
 						<li class="nav-item"><a class="nav-link click-scroll"
-							href="logout"><img alt="" src="img/logout.png" height="30px" style="margin-left: 20px">
-							</a></li>
-							
+							href="logout"><img alt="" src="img/logout.png" height="20px"
+								style="margin-left: 20px"> </a></li>
+
 					</ul>
 				</div>
 			</div>
 		</nav>
-	
-					<div class="row a">
-						<div class="abc col text-dark">
-							<div class="container2 ">
-								<a class="abb" href="Add.html">ADD</a>
-							</div>
-							<div class="container2 ">
-								<a href="View.html">View</a>
-							</div>
-							<div class="container2 ">
-								<a href="Remove.html">Remove </a>
-							</div>
+		<div class="row ">
+			<div class="col mtop">
+				<div class="container10">
 
-						</div>
-						<div class="abc col">
-							<div class="container2 ">
-								<a href="StuRegister.html">Student Register </a>
-							</div>
-							<div class="container2 ">
-								<a href="ApproveProfessor.jsp">Approve Professor </a>
-							</div>
-							<div class="container2 ">
-								<a href="ApproveStudent.jsp">Approve Student </a>
-							</div>
-
-						</div>
-						<div class="abc col">
-							<div class="container2 ">
-								<a href="ProRegister.html">Professor Register</a>
-							</div>
-							<div class="container2 ">
-								<a href="MarkStudent.jsp">Mark Student </a>
-							</div>
-							<div class="container2 ">
-								<a href="Getstumark.html">SEE MARK</a>
-							</div>
-						</div>
-					</div>
+					<a href="Add.html" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">ADD</span>
+					</a>
 
 				</div>
-			
+
+				<div class="container10">
+
+					<a href="View.html" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">VIEW</span>
+					</a>
+
+				</div>
+				<div class="container10">
+
+					<a href="Remove.html" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">Remove</span>
+					</a>
+
+				</div>
+			</div>
+
+			<div class="col mtop">
+				<div class="container10">
+
+					<a href="StuRegister.html" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px"> <span
+						class="button__text">Register Student</span>
+					</a>
+
+				</div>
+
+				<div class="container10">
+
+					<a href="ProRegister.html" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">Register Professor </span>
+					</a>
+
+				</div>
+				<div class="container10">
+
+					<a href="ApproveProfessor.jsp" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">Approve Porfessor
+							</span>
+					</a>
+
+				</div>
+			</div>
+			<div class="col mtop">
+				<div class="container10">
+
+					<a href="ApproveStudent.jsp" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">Approve Student</span>
+					</a>
+
+				</div>
+
+				<div class="container10">
+
+					<a href="MarkStudent.jsp" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">Student Result</span>
+					</a>
+
+				</div>
+				<div class="container10">
+
+					<a href="Getstumark.html" class="button"
+						style="font-size: 20px; margin-top:40px; width: 450px">
+						<div class="button__line"></div> <span class="button__text">View
+							Mark</span>
+					</a>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 
 </body>
 </html>

@@ -9,6 +9,12 @@
 <title>Student Registration Form</title>
 
 <style>
+body {
+background-image:url('img2/ha1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
 
     body {
 
@@ -31,8 +37,7 @@
 
     form {
 
-        background-color: #fff;
-
+        background-color: rgba(255,255,255,0.5);
         padding: 20px;
 
         border-radius: 8px;
@@ -103,27 +108,25 @@
 
 <form action="ProRegister">
 
-		<lable>Professor NAME</lable>
+		<lable>Professor Name</lable>
 		<input type="text" name="pro_name" required>
 
 		<lable>User Name</lable>
 		<input type="text" name="user_name" required>
-		
-		
-		<lable>Passwrd</lable>
+
+
+		<lable>Password</lable>
 		<input type="password" name="user_pass" required>
-		
+
 		<lable>Subject</lable>
 		<input type="text" name="pro_sub" required>
-		
+
 		<lable>Experience</lable>
 		<input type="text" name="pro_exp" required>
-		
-		
+
+
 		<button type="submit">Submit</button>
 	</form>
-
-
 </body>
 
 </html>

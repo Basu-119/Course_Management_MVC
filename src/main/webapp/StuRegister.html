@@ -10,7 +10,7 @@
 
 <style>
 body {
-background-image: url('img/hi1.jpg');
+background-image:url('img2/ha1.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -37,8 +37,7 @@ background-attachment: fixed;
 
     form {
 
-        background-color: #fff;
-
+        background-color: white;
         padding: 20px;
 
         border-radius: 8px;
@@ -69,10 +68,9 @@ background-attachment: fixed;
 
         margin: 5px 0;
 
-        border: 1px solid #ccc;
+        border: 2px solid black;
 
-        border-radius: 4px;
-
+        border-radius: 6px;
         box-sizing: border-box;
 
     }
@@ -109,24 +107,24 @@ background-attachment: fixed;
 
 <form action="StuRegister">
 
-    <label>STUDENT NAME</label>
+    <label>Name:</label>
 
-    <input type="text" name="stu_name">
-
-
-    <label>User Name</label>
-
-    <input type="text" name="user_name">
+    <input type="text" name="stu_name" required>
 
 
-    <label>User Pass</label>
+    <label>User Name:</label>
 
-    <input type="password" name="user_pass">
+    <input type="text" name="user_name" required>
 
 
-    <label>STUDENT COURSE</label>
+    <label>Password:</label>
 
-    <input type="text" name="stu_cou">
+    <input type="password" name="user_pass" required>
+
+
+    <label>Subject:</label>
+
+    <input type="text" name="stu_cou" required>
 
 
     <button type="submit">Submit</button>

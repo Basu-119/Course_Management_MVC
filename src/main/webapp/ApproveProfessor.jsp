@@ -19,6 +19,12 @@
 
 <style>
 body {
+background-image:url('img2/ha1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+body {
 	font-family: Arial, sans-serif;
 	line-height: 1.6;
 	background-color: #f8f8f8;
@@ -53,9 +59,11 @@ th, td {
 	text-align: left;
 	border-bottom: 1px solid #ccc;
 }
-.martop{
-margin-top: 20px;
+
+.martop {
+	margin-top: 20px;
 }
+
 th {
 	background-color: #f2f2f2;
 }
@@ -117,6 +125,10 @@ to {
 	cursor: pointer;
 }
 
+.tableh{
+background-color: black;
+color: black;
+}
 .subscribe-button:hover {
 	background-color: #0056b3;
 }
@@ -125,6 +137,8 @@ to {
 </head>
 <body>
 	<div>
+		<h1 style="margin-left: 60px;font-size:60px; color: white;">Approve Portal</h1>
+	
 		<%
 		session = request.getSession();
 		try {
@@ -141,7 +155,7 @@ to {
 			int j = metadata.getColumnCount();
 		%>
 		<table class="table-hover table-dark">
-			<tr>
+			<tr class="tableh">
 				<%
 				for (int i = 1; i <= j; i++) {
 					out.print("<th style=\"text-align: left;\">" + metadata.getColumnName(i) + "</th>");
@@ -170,19 +184,20 @@ to {
 		}
 		%>
 
-		<form class="custom-form subscribe-form mt-4" action="approvePro"  role="form" method="post">
+		<form class="custom-form subscribe-form mt-4" action="approvePro"
+			role="form" method="post">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-7">
 					<input type="text" name="apppro" class="subscribe-email"
-						placeholder="YOUR NAME HERE" required>
+						style="width: 400px;" 	placeholder="YOUR NAME HERE" required>
 				</div>
 				<div class="col-lg-4 col-md-4 col-5">
-					<button class="button-59 martop" role="button">SUBMIT</button>
+					<button class="button-59 martop" style="background-color: white;" role="button">SUBMIT</button>
 				</div>
 			</div>
 		</form>
 
 	</div>
-	
+
 </body>
 </html>

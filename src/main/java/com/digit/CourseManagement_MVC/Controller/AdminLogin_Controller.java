@@ -24,6 +24,10 @@ protected void service(HttpServletRequest req, HttpServletResponse resp) throws 
 	if(user.admLogin(user_name, user_pass)==true) {
 		resp.sendRedirect("/Course_Management_MVC/Welcome.html");
 	}
+	else {
+		resp.sendRedirect("/Course_Management_MVC/LoginFail.html");
+		
+	}
 	
 
 }

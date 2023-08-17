@@ -19,7 +19,11 @@ public class ProfessorLogin_Controller extends HttpServlet {
 
 		Users user = new Users();
 		if (user.proLogin(user_name, user_pass) == true) {
-			resp.sendRedirect("/Course_Management_MVC/MarkStudent.html");
+			resp.sendRedirect("/Course_Management_MVC/MarkStudent.jsp");
+		}
+		else {
+			resp.sendRedirect("/Course_Management_MVC/LoginFailProfessor.html");
+			
 		}
 
 	}

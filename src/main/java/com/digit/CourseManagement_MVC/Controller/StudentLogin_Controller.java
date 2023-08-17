@@ -22,7 +22,10 @@ public class StudentLogin_Controller extends HttpServlet{
 		if(user.stuLogin(user_name, user_pass)==true) {
 			resp.sendRedirect("/Course_Management_MVC/Getstumark.html");
 		}
-		
+		else {
+			resp.sendRedirect("/Course_Management_MVC/LoginFailStudent.html");
+			
+		}
 
 	}
 }

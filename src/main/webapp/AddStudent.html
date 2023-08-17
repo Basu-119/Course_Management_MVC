@@ -6,106 +6,78 @@
 
 <meta charset="UTF-8">
 
-<title>Insert title here</title>
+<title>Student Registration Form</title>
 
 <style>
 body {
-background-image: url('img/hi.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
+	background-image: url('img2/ha1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
 }
 
-    body {
+form {
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	width: 300px;
+}
 
-        font-family: Arial, sans-serif;
+label {
+	font-weight: bold;
+	display: block;
+	margin-top: 10px;
+}
 
-        background-color: #f5f5f5;
+input {
+	width: 100%;
+	padding: 8px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
 
-        margin: 0;
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
 
-        padding: 0;
-
-    }
-
-    form {
-
-        background-color: #fff;
-
-        width: 400px;
-
-        margin: 20px auto;
-
-        padding: 20px;
-
-        border-radius: 5px;
-
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-
-    }
-
-    label {
-
-        display: block;
-
-        margin-bottom: 5px;
-
-    }
-
-    input[type="text"] {
-
-        width: 100%;
-
-        padding: 10px;
-
-        margin-bottom: 10px;
-
-        border: 1px solid #ccc;
-
-        border-radius: 3px;
-
-    }
-
-    input[type="submit"] {
-
-        background-color: black;
-
-        color: #fff;
-
-        padding: 10px 15px;
-
-        border: none;
-
-        border-radius: 3px;
-
-        cursor: pointer;
-
-    }
-
-    input[type="submit"]:hover {
-
-        background-color: gray;
-
-    }
-
+button:hover {
+	background-color: #0056b3;
+}
 </style>
 
 </head>
 
 <body>
 
-<form action="AddStudent" method="post">
-		<label for="stu_id">STUDENT ID</label> 
-		<input type="text"	id="stu_id" name="stu_id" required>
-		
-		 <label for="stu_name">STUDENT NAME</label>
-		  <input type="text" id="stu_name" name="stu_name" required>
-		  
-		 <label for="stu_cou">STUDENT COURSE</label>
-		  <input type="text" id="stu_cou" name="stu_cou" required>
-		  
-		  
-		   <input type="submit"	value="Add">
+	<form action="AddStudent" method="post">
+		<label for="stu_id">STUDENT ID:</label> 
+		<input type="text" id="stu_id" name="stu_id" placeholder="ID" required>
+			<label	for="stu_name">STUDENT NAME:</label> 
+			<input type="text" id="stu_name"
+			placeholder="Name" name="stu_name" required> <label
+			for="stu_cou">COURSE:</label> <input type="text" id="stu_cou"
+			placeholder="Subject" name="stu_cou" required>
+
+		<button type="submit">Submit</button>
+
+
 	</form>
 
 </body>

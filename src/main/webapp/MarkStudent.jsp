@@ -4,37 +4,115 @@
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.DriverManager"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
+<title>Welcome Page</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<style type="text/css">
+.navbar {
+	background-color: gray;
+}
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background-size: cover;
-	background-position: center;
+background-image:url('img2/ha1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.collapse {
+	margin-left: 890px;
 }
 
-.container {
+.custom-btn {
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px
+		0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+	outline: none;
+}
+
+/* 1 */
+.btn-1 {
+	background: transparent;
+}
+
+.btn-1:hover {
+	background: black;
+}
+
+.btn-4 {
+	background-color: transparent;
+	text: black;
+}
+
+.txt {
+	color: black;
+}
+
+.a {
+	color: black;
+}
+
+.container2 {
 	max-width: 400px;
 	padding: 30px;
 	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 10px;
+	border-color: black;
+	color: black;
+	text-decoration: none;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 10%);
+	text-align: center;
+	margin: 20px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 10%);
+	border-style: groove;
+}
+
+.bi {
+	color: black;
+}
+
+.bi:hover {
+	color: white;
+}
+
+.b1 {
+	color: white;
+}
+
+.abc {
+	padding: 20px;
+	color: white;
+}
+
+.abb:hover {
+	color: black;
+}
+
+
+.container22{
+	max-width: 400px;
+	padding: 30px;
+	margin-left:100px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 	text-align: center;
+	margin-left: 350px;
 }
 
 h1 {
@@ -78,7 +156,6 @@ table {
 	margin-bottom: 20px;
 	border: 1px solid #ccc;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	background-color: #fff;
 }
 
 th, td {
@@ -95,9 +172,6 @@ tr {
 	transition: background-color 0.3s ease;
 }
 
-tr:hover {
-	background-color: #f5f5f5;
-}
 
 caption {
 	text-align: left;
@@ -105,8 +179,7 @@ caption {
 	margin-bottom: 10px;
 }
 
-@
-keyframes fadeIn {from { opacity:0;
+@keyframes fadeIn {from { opacity:0;
 	
 }
 
@@ -114,13 +187,37 @@ to {
 	opacity: 1;
 }
 }
+.inner{
+margin-top: 100px;
+margin-left: 350px;
+}
+
+.tableh{
+background-color: black;
+color: black;
+}
 </style>
-<title>Insert title here</title>
 </head>
 <body>
-	
-	<div>
-			<%
+		<nav class="navbar navbar-expand-lg ">
+			<div class="container">
+				<a href="Welcome.html" class="navbar-brand mx-auto mx-lg-0"> <span
+					class="b1">MY</span> <i></i> <span class="bi">COURSE</span>
+				</a>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ">
+						<li class="nav-item">
+						<li class="nav-item"><a class="nav-link click-scroll"
+							href="logout"><img alt="" src="img/logout.png" height="20px"
+								style="margin-left: 20px"> </a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div style="margin-left:280px; margin-top:100px; width: 1000px;">
+		<%
 			session = request.getSession();
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
@@ -136,8 +233,8 @@ to {
 				int j = metadata.getColumnCount();
 				session = request.getSession();
 			%>
-			<table class="table-hover table-dark">
-				<tr>
+			<table class="table ">
+				<tr class="tableh">
 					<%
 					for (int i = 1; i <= j; i++) {
 					%>
@@ -149,11 +246,11 @@ to {
 				<%
 				while (res.next()) {
 				%>
-				<tr>
+				<tr ">
 					<%
 					for (int i = 1; i <= j; i++) {
 					%>
-					<td style="text-align: left;"><%=res.getString(i)%></td>
+					<td style=" background-color:#e5eaec; text-align: left;"><%=res.getString(i)%></td>
 					<%
 					}
 					%>
@@ -163,7 +260,7 @@ to {
 				%>
 			</table>
 	
-			<div class="container ">
+			<div class="container22 ">
 
 				<form action="mark" method="post">
 					<label>Name</label> <input type="text" name="selstu" required /> <label>Mark</label>
@@ -177,7 +274,9 @@ to {
 			e.printStackTrace();
 			}
 			%>
-		</div>
+		
 	</div>
+
+
 </body>
 </html>
